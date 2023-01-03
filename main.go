@@ -81,7 +81,6 @@ func main() {
 			"body":        convertBody(c.Request().Body),
 			"queryParams": convertParams(c.QueryParams()),
 			"formParams":  convertParams(formParams),
-			"remoteAddr":  c.Request().RemoteAddr,
 			"host":        c.Request().Host,
 			"protocol":    c.Request().Proto,
 			"referer":     c.Request().Referer(),
